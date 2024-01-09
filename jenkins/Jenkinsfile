@@ -16,6 +16,11 @@ pipeline {
                 }
             }
         }
+        stage('Almost complete') {
+            steps {
+                echo "job almost done"
+            }
+        }
         stage('Deliver') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
